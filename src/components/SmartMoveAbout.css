@@ -1,0 +1,191 @@
+/* General Page Styling */
+body{
+  background: linear-gradient(to bottom, #80bff2, #c9ddf0);
+}
+.smartmove-container {
+    
+    background: linear-gradient(to bottom right, #22589d, #5b7fbb);
+    color: white;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Header Section */
+  .smartmove-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    animation: fade-in 1.2s ease-in-out;
+  }
+  
+  .smartmove-logo {
+    width: 200px;
+    height: 180px;
+    margin-bottom: 1rem;
+    animation: bounce-slow 1s infinite alternate;
+  }
+  
+  .smartmove-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .smartmove-subtitle {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #cbd5e1;
+  }
+  
+  /* Key Features Section */
+  .smartmove-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+  }
+  
+  .feature-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+  }
+  
+  .feature-card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .feature-icon {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.8rem;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature-description {
+    font-size: 1rem;
+    color: #cbd5e1;
+  }
+  
+  /* How It Works Section */
+  .smartmove-how-it-works {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .how-it-works-step {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+  }
+  
+  .how-it-works-step:hover {
+    transform: scale(1.02);
+    background: rgba(255, 255, 255, 0.2);
+  }
+ 
+  .step-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background: #3b82f6;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+  }
+  
+  /* Why Choose SmartMove */
+  .smartmove-why-choose {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+  }
+  
+  .why-choose-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .why-choose-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Footer */
+  .smartmove-footer {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+  }
+  
+  /* Animations */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounce-slow {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .smartmove-title {
+      font-size: 2rem;
+    }
+    
+    .smartmove-subtitle {
+      font-size: 1rem;
+    }
+    
+    .feature-title {
+      font-size: 1.2rem;
+    }
+  
+    .feature-description {
+      font-size: 0.9rem;
+    }
+  }
+  

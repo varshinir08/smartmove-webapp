@@ -1,0 +1,102 @@
+/* General Payment Page */
+.payment-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .pay-btn {
+    background-color: #091292;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .pay-btn:disabled {
+    background-color: #bbb;
+    cursor: not-allowed;
+  }
+  
+  /* Ticket Box Styling */
+  .ticket-box {
+    background: #fff; /* White background */
+    border-radius: 10px; /* Rounded edges */
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto; /* Center the ticket */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border: 2px dashed #3498db; 
+  }
+  
+  /* Header of Ticket */
+  .ticket-header {
+    background-color: #3399cc;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  /* Ticket Content */
+  .ticket-content {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    color: black;
+  }
+  
+  .ticket-content p {
+    font-size: 16px;
+    margin: 5px 0;
+    color:black;
+  }
+  
+  /* Circular Cutouts for Ticket Look */
+  .ticket-box::before,
+  .ticket-box::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: inset 0 0 5px #aaa;
+  }
+  
+  .ticket-box::before {
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .ticket-box::after {
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Finish Button */
+  .finish-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .finish-btn:hover {
+    background-color: #45a049;
+  }
+  
