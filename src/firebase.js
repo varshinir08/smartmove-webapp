@@ -4,7 +4,7 @@ import { getFirestore } from "firebase/firestore";
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCqTl_-j9_Hx6ksmmLxnjpo-8V9cC4Ek5w",
+  apiKey: "YOUR_API_KEY",
   authDomain: "smartmoveweb-fdcc0.firebaseapp.com",
   projectId: "smartmoveweb-fdcc0",
   storageBucket: "smartmoveweb-fdcc0.firebasestorage.app",
